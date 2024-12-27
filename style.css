@@ -1,0 +1,557 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+  transition: all.2s linear;
+  text-decoration: none;
+  border: none;
+  position: relative;
+}
+html {
+  font-size: 80%;
+  overflow-x: hidden;
+  scroll-padding-top: 7em;
+  scroll-behavior: smooth;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 8%;
+  box-shadow: 0 0 10px 0 black;
+  height: 60px;
+}
+header .logo {
+  color: rgb(2, 2, 192);
+  font-size: 25px;
+  font-weight: bold;
+}
+header .logo span {
+  color: rgb(0, 0, 0);
+}
+.menu {
+  display: flex;
+}
+.menu li {
+  list-style: none;
+  padding: 10px;
+  font-size: 15px;
+}
+.menu li a {
+  color: rgb(0, 0, 0);
+}
+.menu li a:hover {
+  color: blue;
+}
+div {
+  width: 80px;
+}
+#home {
+  height: calc(100ch - 50px);
+  padding: 0 8%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  position: relative;
+}
+#home .left {
+  margin-top: 150px;
+  width: 40%;
+}
+#home .left h1 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+#home .left h1 span {
+  color: blue;
+}
+#home .left p {
+  margin-bottom: 30px;
+  font-size: 13px;
+  color: rgb(61, 61, 61);
+}
+#home .left a {
+  padding: 10px;
+  background-color: blue;
+  color: black;
+  font-size: 20px;
+  margin: 80px;
+  border-radius: 10px;
+}
+#home .left a:hover {
+  background-color: aqua;
+  color: rgb(219, 12, 22);
+}
+#home .right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home .right img {
+  width: 100%;
+}
+#cars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+#cars .titre {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+  position: relative;
+}
+#cars .titre:before {
+  position: absolute;
+  left: 10px;
+  background-color: blue;
+  width: 100%;
+  height: 5px;
+  bottom: 0;
+  content: "";
+  border-radius: 10px;
+}
+#cars .titre::after {
+  position: absolute;
+  left: -10px;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color: blue;
+  border-radius: 10px;
+}
+/* .photos2{
+margin: 100px; 
+padding: 0 8%; 
+}
+.photos2 ul {
+ display: flex;
+ flex-wrap: wrap;
+ width: 100%;
+
+}
+.photos2 li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3%;
+  height: 300px;
+  width: 28%;
+  transition: 0.5s;
+}
+.photos2 li div{
+
+}
+.photos2 li div img{
+  width: 150px;
+}
+.car{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ */
+.photos2 {
+  width: 200px;
+}
+ul .aa:hover {
+  transform: scale(1.1);
+}
+ul .ab:hover {
+  transform: scale(1.1);
+}
+ul .ac:hover {
+  transform: scale(1.1);
+}
+ul .ae:hover {
+  transform: scale(1.1);
+}
+ul .af:hover {
+  transform: scale(1.1);
+}
+ul .ad:hover {
+  transform: scale(1.1);
+}
+.car {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 50px;
+  margin: 100px;
+  padding: 0 8%;
+  width: 1300px;
+  height: 600px;
+}
+.aa {
+  font-size: 20px;
+}
+.ab {
+  font-size: 20px;
+}
+.ac {
+  font-size: 20px;
+}
+.ae {
+  font-size: 20px;
+}
+.af {
+  font-size: 20px;
+}
+.ad {
+  font-size: 20px;
+}
+.car span {
+  color: rgb(0, 0, 0);
+  margin-left: 55px;
+}
+
+.car a {
+  background-color: blue;
+  color: black;
+  padding: 5px;
+  margin-left: 55px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+.car a:hover {
+  color: rgb(255, 5, 5);
+  background-color: aqua;
+}
+.foot {
+  background-color: black;
+  height: 300px;
+}
+.info {
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 40px;
+  font-size: 20px;
+}
+.map-container {
+  margin-left: 900px;
+}
+.média {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.média a {
+  padding-left: 200px;
+}
+footer > p {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: antiquewhite;
+  margin-bottom: 20px;
+}
+@media (max-width: 576px) {
+  header .logo {
+    color: rgb(2, 2, 192);
+    font-size: 10px;
+    font-weight: bold;
+  
+  }
+  header .logo span {
+    color: rgb(0, 0, 0);
+  }
+  .menu {
+    display: flex;
+  }
+  .menu li {
+    list-style: none;
+    padding: 5px;
+    font-size: 10px;
+  }
+  .menu li a {
+    color: rgb(0, 0, 0);
+  }
+  .menu li a:hover {
+    color: blue;
+  }
+  div {
+    width: 50px;
+  }
+  #home {
+    height: calc(70ch - 50px);
+    padding: 0 8%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: relative;
+  }
+  #home .left {
+    margin-top: 50px;
+    width: 40%;
+  }
+  #home .left h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  #home .left h1 span {
+    color: blue;
+  }
+  #home .left p {
+    margin-bottom: 30px;
+    font-size: 13px;
+    color: rgb(61, 61, 61);
+  }
+  #home .left a {
+   color: rgb(0, 0, 0);
+   padding: 10;
+   margin: 0;
+   font-size: 10px;
+  }
+  #home .left a:hover {
+    background-color: aqua;
+    color: rgb(219, 12, 22);
+  }
+  #home .right img {
+    width: 100%;
+  }
+  #cars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  #cars .titre {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 30px;
+    position: relative;
+  }
+  #cars .titre:before {
+    position: absolute;
+    left: 10px;
+    background-color: blue;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    content: "";
+    border-radius: 10px;
+  }
+  #cars .titre::after {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: blue;
+    border-radius: 10px;
+  }
+  .car {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 50px;
+  margin: 100px;
+  padding: 0 8%;
+  width: 1300px;
+  height: 600px;
+}
+.foot {
+  background-color: black;
+  height: 300px;
+  margin-top: 900px; 
+  width: 100%;
+}
+.info {
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  font-size: 10px;
+}
+.map-container {
+  margin-left: 80px;
+  width: 20px;
+  
+}
+.média {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.média a {
+  padding-left: 40px;
+}
+footer > p {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: antiquewhite;
+  margin-bottom: 10px;
+}
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  /* ... */
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  
+  header .logo {
+    color: rgb(2, 2, 192);
+    font-size: 13px;
+    font-weight: bold;
+   
+  
+  }
+  header{
+    margin-right: 300px;
+  }
+  header .logo span {
+    color: rgb(0, 0, 0);
+  }
+  .menu {
+    display: flex;
+  }
+  .menu li {
+    list-style: none;
+   
+    padding: 5px;
+    font-size: 12px;
+  }
+  .menu li a {
+    color: rgb(0, 0, 0);
+  }
+  .menu li a:hover {
+    color: blue;
+  }
+  div {
+    width: 50px;
+  }
+  #home {
+    height: calc(70ch - 50px);
+    padding: 0 8%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: relative;
+  }
+  #home .left {
+    margin-top: 50px;
+    width: 40%;
+  }
+  #home .left h1 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  #home .left h1 span {
+    color: blue;
+  }
+  #home .left p {
+    margin-bottom: 30px;
+    font-size: 13px;
+    color: rgb(61, 61, 61);
+  }
+  #home .left a {
+   color: rgb(0, 0, 0);
+   padding: 10;
+   margin: 0;
+   font-size: 10px;
+  }
+  #home .left a:hover {
+    background-color: aqua;
+    color: rgb(219, 12, 22);
+  }
+  #home .right img {
+    width: 100%;
+  }
+  #cars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  #cars .titre {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 30px;
+    position: relative;
+  }
+  #cars .titre:before {
+    position: absolute;
+    left: 10px;
+    background-color: blue;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    content: "";
+    border-radius: 10px;
+  }
+  #cars .titre::after {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: blue;
+    border-radius: 10px;
+  }
+  .car {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 50px;
+  margin: 100px;
+  padding: 0 8%;
+  width: 1300px;
+  height: 600px;
+}
+.foot {
+  background-color: black;
+  height: 300px;
+  margin-top: 900px; 
+  width: 100%;
+}
+.info {
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  font-size: 10px;
+}
+.map-container {
+  margin-left: 80px;
+  width: 20px;
+  
+}
+.média {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.média a {
+  padding-left: 40px;
+}
+footer > p {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: antiquewhite;
+  margin-bottom: 10px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* ... */
+}
+
+@media (min-width: 1200px) {
+  /* ... */
+}
